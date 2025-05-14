@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon/img.portafo.jpg" type="Imagen">
+    <title>“Mi Portafolio Web Personal”</title>
+</head>
+<body>
+    <header> 
+       <!--Mi nombre con un lema y una foto personal mia--> 
+        <h1>Jorge Luis Sanchez Vásquez</h1>
+        <p><em>"Transformamos datos en decisiones inteligentes."</em></p>
+        <hr/>
+        </br>
+        <img id="img_per"src="/img/Imagen de WhatsApp 2025-05-13 a las 15.00.31_738042d9.jpg" alt="Imagen Personal">
+        <a id="ancla_imagen"></a>
+    </header>
+    <nav> 
+        <!--ENLACES PARA LLEVAR A UN PUNTO ESPECIFICO DE LA MISMA PAGINA-->
+        <a href="#ancla_imagen">Ir a Imangen </a> <br/>
+        <a href="#audio_presen">Ir a Audio de presentación</a> <br/>
+        <a href="#logros">Ir a logros</a> <br/>
+        <a href="#tabla_habilidades">Ir a la Tabla de Habilidades</a> <br/>
+        <a href="#formulario">Ir al Formulario</a> <br/>
+        <a href="#redes_sociales">Ir a Redes Sociales</a> <br/>
+
+    </nav>
+    <section id="sobre_mi">
+        <!--PRESENTACIÓN DE MI-->
+        <h3><strong>Sobre mí</strong></h3>
+        <p>Soy <strong>Jorge Luis Sanchez Vàsquez </strong> , estudiante de tercer año de Ingeniería en <mark>Sistemas de Información en la Universidad Tecnica de Babahoyo</mark>,habiéndome graduado previamente en Informática en la Unidad Educatica<em> "RICAURTE"</em>, con 20 años de edad, residente en Urdaneta,Los Rios.
+           Me destaco por mi capacidad de trabajo en equipo, adaptabilidad a nuevos entornos y habilidades de comunicación efectiva.
+           Además de mi interés por la tecnología, disfruto de la lectura de ciencia ficción y la práctica del ciclismo.
+        </p>
+        <br/>
+        <!--LISTA NO ORDENADA DE MIS INTERESES-->
+        <h3>Lista de intereses</h3>
+          <ul type="circle">
+            <li>Me interesa las series</li>
+            <li>Los videojuegos</li>
+            <li>Me gusta programar</li>
+          </ul>
+         <!--UNA LISTA NO ORDENADA DE MIS LOGROS-->
+         <h3>Lista de logros</h3>
+         <ul id="logros" type="square"> 
+            <li>Graduarme en Informática.</li>
+            <li>Reconocimientos Escolares.</li>
+            <li>Cursos de Dibujo y Pintura.</li>
+            <li>Curso de Boxeo</li>
+            <li>Curso de Computacion</li>
+        </ul>
+        </br>
+        <!--TABLA CON MIS HABILIDADES-->
+        <h3>Tabla de habilidades</h3>
+        <table id="tabla_habilidades" border="1">
+            <thead></thead>
+            <tr><th colspan="2">Mis Habilidades</th></tr>
+            <tr><th>  En la casa </th><th>En la Universidad</th></tr>
+            <tr><td>Cocinar platos básicos</td><td>Entender las matematicas</td></tr>
+            <tr><td>Organización del hogar</td><td>Trabajo en equipo</td></tr>
+            <tr><td>Lavado de ropa</td><td>Adaptabilidad</td></tr>
+            <tr><td>Hacer compras</td><td>Resolución de problemas</td></tr>
+            <tr><td>Cuidado de mascotas</td><td>Organización</td></tr>
+        </table> <br/>
+        <!--MULTIMEDIA(Audio de presentación)-->
+        <h3>Audio de presentación personal</h3>
+        <audio id="audio_presen" src="audio/Audio de WhatsApp 2025-05-13 a las 19.16.10_25b062fd.dat.unknown.mp4"controls></audio>
+        <br/>
+        <!--FORMULARIO -->
+        <h3>Formulario de contacto</h3> 
+        <form id="formulario">
+            <fieldset>
+               <legend><strong>Contacto Personales</strong></legend>  
+               <!-- Campo para ingresar el nombre del usuario -->
+               <label for="txtnombre">Nombre y Apellidos:</label> 
+               <input type="text" name="txtnombre"id="txtnombre"> <br/>
+               <!-- Campo para ingresar el correo electrónico -->
+               <label for="correo">Correo Electronico:</label> 
+               <input type="email" name="correo" id="correo"> <br/>
+               <!-- Campo para ingresar la edad -->
+               <label for="edad">Edad:</label> 
+               <input type="number" name="edad" id="edad"min="1" max="60" step="1"> <br/>
+               <!-- Selección de género -->
+               <label for="rad_genero">Genero:</label> <br/>
+               <input type="radio" name="rad_genero" id="Masculino" checked>Masculino <br/>
+               <input type="radio" name="rad_genero" id="Femenino">Femenino <br/>
+               <!-- Campo para ingresar el numero de telefono -->
+               <label for="telefono">Numero de telefono:</label>
+               <input type="tel" name="telefono" id="telefono"> <br/>
+               <!-- Ingresar un comentario -->
+               <label for="txtarea">Comentario:</label> <br/>
+               <textarea name="txtarea" id="txtarea" cols="50" rows="5">
+               </textarea>
+               </fieldset>
+               <input type="submit" value="Enviar">
+               <input type="reset" value="Reiniciar">
+        </form>
+    </section>
+    <footer id="redes_sociales">
+        <!--REDES SOCIALES MIAS/DERECHOS DE AUTOR-->
+        <a href="https://www.facebook.com/jorgeluis.sanchezvasquez.77" target="_blank">
+            <img src="icon/icon-3d-facebook.avif" alt="icon_d_facebook" width="50px" height="50px">
+        </a>
+        <a href="https://www.instagram.com/jorgesanchez_05/?next=%2F" target="_blank">
+            <img src="icon/icon-3d-igg.jpg" alt="icon_d_ig" width="50px" height="50px">
+        </a>
+        <a href="https://x.com/jorgesanche_05" target="_blank">
+            <img src="icon/icon-twt.webp" alt="icon_d_ig" width="50px" height="50px">
+        </a>
+        <p>&copy; 2025 Jorge Sanchez. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
